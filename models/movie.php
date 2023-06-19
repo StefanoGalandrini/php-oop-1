@@ -37,25 +37,25 @@ class Movie
 	public function displayMovieInfo()
 	{
 		echo "<h2>{$this->title}</h2>";
-		echo "<p>Director: {$this->director}</p>";
-		echo "<p>Country: {$this->country}</p>";
-		echo "<p>Genres:</p>";
+		echo "<p>Regia: <span>{$this->director}</span></p>";
+		echo "<p>Nazione: <span>{$this->country}</span></p>";
+		echo "<p>Genere:</p>";
 		echo "<ul>";
 		foreach ($this->genres as $genre) {
-			echo "<li>$genre</li>";
+			echo "<li><span>$genre</span></li>";
 		}
 		echo "</ul>";
 		echo "<p>Cast:</p>";
 		echo "<ul>";
 		foreach ($this->cast as $actor) {
-			echo "<li>$actor</li>";
+			echo "<li><span>$actor</span></li>";
 		}
 		echo "</ul>";
-		echo "<p>Year: {$this->year}</p>";
+		echo "<p>Anno di uscita: <span>{$this->year}</span></p>";
 		if ($this->poster) {
 			$posterPath = $this->getPosterPath($this->poster);
-			echo "<p>{$posterPath}</p>";
-			// echo "<img src='{$posterPath}' alt='{$this->title} Poster'>";
+			// echo "<p>{$posterPath}</p>";
+			echo "<img src='{$posterPath}' alt='{$this->title} Poster'>";
 		}
 	}
 }
