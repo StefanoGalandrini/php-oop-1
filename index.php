@@ -1,5 +1,10 @@
 <?php
-class Movie {
+
+$json = file_get_contents(__DIR__ . "/db.json");
+$moviesData = json_decode($json, true);
+
+class Movie
+{
     public string $title;
     public string $director;
     public string $country;
@@ -8,7 +13,8 @@ class Movie {
     public int $year;
     public ?string $poster;
 
-    public function __construct(string $title, string $director, string $country, array $genres, array $cast, int $year, ?string $poster) {
+    public function __construct(string $title, string $director, string $country, array $genres, array $cast, int $year, ?string $poster)
+    {
         $this->title = $title;
         $this->director = $director;
         $this->country = $country;
@@ -18,16 +24,50 @@ class Movie {
         $this->poster = $poster;
     }
 
-    public function displayMovieInfo() {
+    public function getPosterPath($filename)
+    {
+        $fullPath = "img/" . $filename;
+        return $fullPath;
+    }
+
+
+
+    public function displayMovieInfo()
+    {
         echo "<h2>{$this->title}</h2>";
         echo "<p>Director: {$this->director}</p>";
         echo "<p>Country: {$this->country}</p>";
-        echo "<p>Genres: " . implode(', ', $this->genres) . "</p>";
-        echo "<p>Cast: " . implode(', ', $this->cast) . "</p>";
+        echo "<p>Genres:</p>";
+        echo "<ul>";
+        foreach ($this->genres as $genre) {
+            echo "<li>$genre</li>";
+        }
+        echo "</ul>";
+        echo "<p>Cast:</p>";
+        echo "<ul>";
+        foreach ($this->cast as $actor) {
+            echo "<li>$actor</li>";
+        }
+        echo "</ul>";
         echo "<p>Year: {$this->year}</p>";
         if ($this->poster) {
-            echo "<img src='{$this->poster}' alt='{$this->title} Poster'>";
+            $posterPath = $this->getPosterPath($this->poster);
+            echo "<p>{$posterPath}</p>";
+            // echo "<img src='{$posterPath}' alt='{$this->title} Poster'>";
         }
     }
 }
-?>
+
+foreach ($moviesData as $movie) {
+    $movie = new Movie(
+        $movie['title'],
+        $movie['director'],
+        $movie['country'],
+        $movie['genres'],
+        $movie['cast'],
+        $movie['year'],
+        $movie['poster']
+    );
+
+    $movie->displayMovieInfo();
+}

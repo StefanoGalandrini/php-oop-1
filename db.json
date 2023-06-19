@@ -1,0 +1,65 @@
+[
+	{
+		"title": "Le onde del destino",
+		"director": "Lars von Trier",
+		"country": "Danimarca",
+		"genres": ["Drammatico"],
+		"cast": ["Emily Watson", "Stellan Skarsgård"],
+		"year": 1996,
+		"poster": "onde-del-destino.jpg"
+	},
+	{
+		"title": "The tree of life",
+		"director": "Terrence Malick",
+		"country": "Stati Uniti",
+		"genres": ["Drammatico", "Fantascienza"],
+		"cast": ["Brad Pitt", "Jessica Chastain", "Sean Penn"],
+		"year": 2011,
+		"poster": "tree-of-life.jpg"
+	},
+	{
+		"title": "Il fantastico mondo di Amelie",
+		"director": "Jean-Pierre Jeunet",
+		"country": "Francia",
+		"genres": ["Commedia", "Romantico"],
+		"cast": ["Audrey Tautou", "Mathieu Kassovitz"],
+		"year": 2001,
+		"poster": "amelie.jpg"
+	},
+	{
+		"title": "Memorie di una geisha",
+		"director": "Rob Marshall",
+		"country": "Stati Uniti",
+		"genres": ["Drammatico", "Romantico"],
+		"cast": ["Zhang Ziyi", "Ken Watanabe"],
+		"year": 2005,
+		"poster": "memorie-di-una-geisha.jpg"
+	},
+	{
+		"title": "Alien",
+		"director": "Ridley Scott",
+		"country": "Stati Uniti",
+		"genres": ["Horror", "Fantascienza"],
+		"cast": ["Sigourney Weaver", "Tom Skerritt", "John Hurt"],
+		"year": 1979,
+		"poster": "alien.jpg"
+	},
+	{
+		"title": "Frankenstein junior",
+		"director": "Mel Brooks",
+		"country": "Stati Uniti",
+		"genres": ["Commedia", "Horror"],
+		"cast": ["Gene Wilder", "Peter Boyle", "Marty Feldman"],
+		"year": 1974,
+		"poster": "frankenstein-junior.jpg"
+	},
+	{
+		"title": "Blade Runner",
+		"director": "Ridley Scott",
+		"country": "Stati Uniti",
+		"genres": ["Fantascienza", "Thriller"],
+		"cast": ["Harrison Ford", "Rutger Hauer"],
+		"year": 1982,
+		"poster": "blade-runner.jpg"
+	}
+]
