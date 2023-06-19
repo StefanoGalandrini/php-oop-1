@@ -45,15 +45,6 @@
 		"poster": "alien.jpg"
 	},
 	{
-		"title": "Frankenstein junior",
-		"director": "Mel Brooks",
-		"country": "Stati Uniti",
-		"genres": ["Commedia", "Horror"],
-		"cast": ["Gene Wilder", "Peter Boyle", "Marty Feldman"],
-		"year": 1974,
-		"poster": "frankenstein-junior.jpg"
-	},
-	{
 		"title": "Blade Runner",
 		"director": "Ridley Scott",
 		"country": "Stati Uniti",

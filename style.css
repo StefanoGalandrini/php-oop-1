@@ -1,0 +1,43 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	width: 80vw;
+	margin: auto;
+}
+
+.movie-grid {
+	padding: 3rem 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 20px;
+	align-items: stretch;
+	width: 100%;
+}
+
+.movie-card {
+	background-color: gold;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	min-height: 300px;
+}
+
+
+
+.movie-card img {
+	width: 100%;
+	height: auto;
+}
